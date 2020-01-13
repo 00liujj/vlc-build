@@ -1,0 +1,14 @@
+prefix=/data/new/jianjun/jianjun/ffmpeg-4.2.2/install/
+exec_prefix=${prefix}
+libdir=/data/new/jianjun/jianjun/ffmpeg-4.2.2/install//lib
+includedir=/data/new/jianjun/jianjun/ffmpeg-4.2.2/install//include
+
+Name: libswscale
+Description: FFmpeg image rescaling library
+Version: 5.5.100
+Requires: 
+Requires.private: libavutil >= 56.31.100
+Conflicts:
+Libs: -L${libdir}  -lswscale 
+Libs.private: -lm
+Cflags: -I${includedir}

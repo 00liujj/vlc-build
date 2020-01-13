@@ -1,0 +1,14 @@
+prefix=/data/new/jianjun/jianjun/ffmpeg-4.2.2/install/
+exec_prefix=${prefix}
+libdir=/data/new/jianjun/jianjun/ffmpeg-4.2.2/install//lib
+includedir=/data/new/jianjun/jianjun/ffmpeg-4.2.2/install//include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 56.31.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil 
+Libs.private: -pthread -lm
+Cflags: -I${includedir}

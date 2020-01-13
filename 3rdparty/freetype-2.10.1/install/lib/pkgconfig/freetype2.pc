@@ -1,0 +1,14 @@
+prefix=/home/jianjun/Downloads/vlc-3.0.9/3rdparty/freetype-2.10.1/install
+exec_prefix=/home/jianjun/Downloads/vlc-3.0.9/3rdparty/freetype-2.10.1/install
+libdir=/home/jianjun/Downloads/vlc-3.0.9/3rdparty/freetype-2.10.1/install/lib
+includedir=/home/jianjun/Downloads/vlc-3.0.9/3rdparty/freetype-2.10.1/install/include
+
+Name: FreeType 2
+URL: https://freetype.org
+Description: A free, high-quality, and portable font engine.
+Version: 23.1.17
+Requires:
+Requires.private: zlib, libpng
+Libs: -L${libdir} -lfreetype
+Libs.private: 
+Cflags: -I${includedir}/freetype2
