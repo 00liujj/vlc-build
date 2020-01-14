@@ -1,3 +1,5 @@
+# CC=gcc-5 CXX=g++-5 cmake ..
+
 cmake_minimum_required(VERSION 2.8)
 
 if (NOT CMAKE_BUILD_TYPE)
@@ -19,7 +21,7 @@ project(motiondetect C CXX)
 
 set(LIB ${PROJECT_NAME})
 
-add_definitions(-std=c99 -DHAVE_CONFIG_H -D__PLUGIN__ -DMODULE_STRING=\"${LIB}\")
+add_definitions(-DHAVE_CONFIG_H -D__PLUGIN__ -DMODULE_STRING=\"${LIB}\")
 
 file(GLOB src_files
    src/*.c
